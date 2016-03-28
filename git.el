@@ -1,0 +1,3 @@
+;; magit
+
+(package-install 'magit)
