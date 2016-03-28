@@ -29,3 +29,8 @@
 (defun go-compile ()
   (set (make-local-variable 'compile-command) "go build -v && go test -v && go install"))
 (add-hook 'go-mode-hook 'go-compile)
+
+(add-hook 'go-mode-hook 'company-mode)
+(add-hook 'go-mode-hook (lambda ()
+  (set (make-local-variable 'company-backends) '(company-go))
+  (company-mode)))
