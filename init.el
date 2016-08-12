@@ -2,6 +2,7 @@
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'control)
 
+(require 'wgrep)
 (require 'ido)
 (setq ido-everywhere t)
 (setq ido-default-buffer-method 'selected-window)
