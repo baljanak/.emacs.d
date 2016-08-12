@@ -8,6 +8,7 @@
 (ido-mode 1)
 
 (fset 'yes-or-no-p 'y-or-n-p)
+(add-hook 'find-file-hook (lambda () (linum-mode 1)))
 
 (require 'whitespace)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
