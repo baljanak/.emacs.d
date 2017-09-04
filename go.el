@@ -34,3 +34,7 @@
 (add-hook 'go-mode-hook (lambda ()
   (set (make-local-variable 'company-backends) '(company-go))
   (company-mode)))
+(add-hook 'go-mode-hook
+          (lambda ()
+            (setq tab-width 4)
+            (setq indent-tabs-mode 1)))
