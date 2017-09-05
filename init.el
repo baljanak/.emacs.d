@@ -31,7 +31,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (go-mode yaml-mode wgrep magit go-rename go-eldoc exec-path-from-shell dockerfile-mode company-go))))
+    (auto-complete ripgrep go-mode yaml-mode wgrep magit go-rename go-eldoc exec-path-from-shell dockerfile-mode company-go))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

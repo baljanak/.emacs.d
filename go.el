@@ -22,7 +22,7 @@
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook 'gofmt-before-save)
 
-(load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
+;; (load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
 (load-file "$GOPATH/src/github.com/dougm/goflymake/go-flymake.el")
 
 (require 'compile)
@@ -38,3 +38,7 @@
           (lambda ()
             (setq tab-width 4)
             (setq indent-tabs-mode 1)))
+
+(defun auto-complete-for-go ()
+  (auto-complete-mode 1))
+(add-hook 'go-mode-hook 'auto-complete-for-go)
