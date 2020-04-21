@@ -11,3 +11,4 @@
 (load "$HOME/.emacs.d/go.el")
 (load "$HOME/.emacs.d/git.el")
 (load "$HOME/.emacs.d/python.el")
+(load "$HOME/.emacs.d/dockerfile.el")
