@@ -37,6 +37,10 @@
   (auto-package-update-maybe))
 
 ;; Fira Code
+;; brew tap homebrew/cask-fonts
+;; brew cask install font-fira-code
+;; Install fira code symbols:
+;; https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip
 (package-install 'fira-code-mode)
 (use-package fira-code-mode
   :custom (fira-code-mode-disabled-ligatures '("x" "[]")) ;; List of ligatures to turn off
