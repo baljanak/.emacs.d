@@ -23,7 +23,7 @@
 (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; (load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
-(load-file "$GOPATH/src/github.com/dougm/goflymake/go-flymake.el")
+;; (load-file "$GOPATH/src/github.com/dougm/goflymake/go-flymake.el")
 
 (require 'compile)
 (defun go-compile ()
