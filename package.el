@@ -1,4 +1,7 @@
 (require 'package)
+
+
+
 (setq package--init-file-ensured t ; Don't modify init
       package-archives '(("melpa" . "http://melpa.org/packages/")
                          ("gnu" . "http://elpa.gnu.org/packages/")))
@@ -36,14 +39,14 @@
         auto-package-update-interval 30)
   (auto-package-update-maybe))
 
-;; Fira Code
-;; brew tap homebrew/cask-fonts
-;; brew cask install font-fira-code
-;; Install fira code symbols:
-;; https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip
-(package-install 'fira-code-mode)
-(use-package fira-code-mode
-  :custom (fira-code-mode-disabled-ligatures '("x" "[]")) ;; List of ligatures to turn off
-  :hook prog-mode) ;; Enables fira-code-mode automatically for programming major modes
+;; ;; Fira Code
+;; ;; brew tap homebrew/cask-fonts
+;; ;; brew cask install font-fira-code
+;; ;; Install fira code symbols:
+;; ;; https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip
+;; (package-install 'fira-code-mode)
+;; (use-package fira-code-mode
+;;   :custom (fira-code-mode-disabled-ligatures '("x" "[]")) ;; List of ligatures to turn off
+;;   :hook prog-mode) ;; Enables fira-code-mode automatically for programming major modes
 
 (provide 'package-config)

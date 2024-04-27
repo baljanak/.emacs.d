@@ -1,20 +1,16 @@
 ;; Default indent
 (setq python-indent-offset 4)
 
-;; Jedi
-(use-package jedi
+;; elpy
+(use-package elpy
   :ensure t
-  :defer t
-  :config
-  (setq jedi:setup-keys t)
-  (setq jedi:complete-on-dot t)
-  :hook (python-mode . jedi:setup))
+  :init
+  (elpy-enable))
 
-;; Company mode
-(use-package company-jedi
+;; company
+(use-package company
   :ensure t
-  :defer t
-  :after (jedi company helm-company)
-  :hook (python-mode . (lambda () (add-to-list 'company-backends 'company-jedi))))
+  :init
+  (global-company-mode))
 
 (provide 'python-config)
